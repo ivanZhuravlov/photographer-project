@@ -1,0 +1,35 @@
+.questions {
+	margin-top: 40px;
+
+	&-wrapper {
+		padding: 60px 0 100px;
+
+		background-color: var(--grey-dark);
+	}
+
+	&__title {
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.questions {
+		&__title {
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.questions {
+		margin-top: 0;
+
+		&-wrapper {
+			padding: 0 0 50px;
+		}
+
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,176 @@
+.sessions {
+  padding: 30px 0;
+
+  &__choose-package {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 450px;
+    margin: 80px auto 0;
+    padding: 15px 100px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+    background-color: var(--grey);
+
+    &__title {
+      margin-bottom: 15px;
+
+      white-space: nowrap;
+
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 27px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    &__btn {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+  }
+
+  &__steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 35px;
+
+    border-bottom: 1px solid #c1c0ba;
+
+    &__item {
+      flex-basis: 33.3%;
+
+      padding: 25px 40px;
+
+      text-align: center;
+
+      color: var(--grey-alt);
+
+      font-weight: 600;
+
+      &_active {
+        color: var(--black);
+        border-bottom: 1px solid var(--primary);
+      }
+    }
+
+    &__desc {
+      max-width: 390px;
+      margin: 0 auto 45px;
+
+      text-align: center;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__line {
+    max-width: 1200px;
+    height: 1px;
+    margin: 40px auto 0;
+
+    background-color: #000;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 0;
+
+    pointer-events: none;
+
+    button {
+      margin: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sessions {
+    min-height: calc(100vh - 77px);
+
+    &__steps {
+      overflow-x: auto;
+      justify-content: flex-start;
+
+      margin-bottom: 15px;
+
+      &__item {
+        padding: 15px 20px;
+
+        white-space: nowrap;
+      }
+
+      &__desc {
+        margin-bottom: 30px;
+
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &__btns {
+      position: fixed;
+      z-index: 10;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      justify-content: space-between;
+
+      min-height: 71px;
+      padding: 10px 0;
+
+      border-top: 1px solid var(--black);
+      background-color: var(--white);
+
+      button {
+        margin: 0 15px;
+      }
+    }
+
+    &__choose-package {
+      position: fixed;
+      z-index: 10;
+      bottom: 78px;
+      left: 50%;
+
+      max-width: 200px;
+      margin: 0;
+      padding: 10px 20px;
+
+      transform: translate(-50%, 0);
+
+      &__title {
+        margin-bottom: 0;
+
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      &__btn {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sessions {
+    padding: 10px 0;
+  }
+}

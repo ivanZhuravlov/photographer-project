@@ -1,0 +1,38 @@
+.sessions {
+	&__details {
+		max-width: 450px;
+
+		&__input {
+			margin-bottom: 45px;
+
+			input {
+				font-weight: normal;
+			}
+		}
+
+		&__checkbox {
+			margin: 25px 0 80px;
+
+			label {
+				display: block;
+
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 22px;
+			}
+
+			a {
+				margin-left: 5px;
+
+				text-decoration: underline;
+
+				color: var(--grey-alt);
+
+				font-size: 16px;
+
+				font-weight: normal;
+				line-height: 22px;
+			}
+		}
+	}
+}

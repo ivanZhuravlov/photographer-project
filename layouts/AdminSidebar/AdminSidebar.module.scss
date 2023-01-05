@@ -1,0 +1,28 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 100px;
+	padding: 20px;
+
+	background-color: var(--grey-dark);
+
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 30px 0;
+
+		a {
+			margin-top: 10px;
+
+			text-align: center;
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--black);
+		}
+	}
+}

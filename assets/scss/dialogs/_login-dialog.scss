@@ -1,0 +1,66 @@
+.login-popup {
+	width: 450px;
+	padding: 70px 0;
+
+	&__title {
+		margin: 0 0 20px;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		font-weight: bold;
+	}
+
+	&__desc {
+		max-width: 240px;
+		margin: 0 auto 35px;
+
+		text-align: center;
+
+		&_large {
+			max-width: 350px;
+		}
+	}
+
+	&__form {
+		&__input {
+			margin-bottom: 20px;
+		}
+
+		&__btns {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			margin: 35px auto 0;
+
+			button {
+				margin: 0 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.login-popup {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.login-popup {
+		width: auto;
+		margin: 0;
+		padding: 40px 10px;
+
+		&__form {
+			&__help-btn {
+				text-align: left;
+
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+	}
+}

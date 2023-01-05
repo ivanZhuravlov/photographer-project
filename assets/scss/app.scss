@@ -1,0 +1,60 @@
+@import "reset";
+@import "fonts";
+@import "colors";
+@import "typography";
+@import "dialogs";
+
+html,
+body {
+  position: relative;
+  scroll-behavior: auto !important;
+
+  height: auto;
+
+  background-color: var(--white);
+
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+}
+
+.react-reveal {
+  animation-fill-mode: backwards !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.admin-content {
+  display: flex;
+
+  min-height: calc(100vh - 106px);
+
+  background: #e5e5e5;
+
+  &__children {
+    padding: 50px 200px;
+    width: 100%;
+  }
+}
+
+.pricing-top-column {
+  padding-top: 103px;
+}
+
+@media screen and (max-width: 1250px) {
+  .pricing-top-column {
+    padding-top: 0;
+  }
+}

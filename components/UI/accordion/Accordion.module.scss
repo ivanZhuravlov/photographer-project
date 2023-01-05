@@ -1,0 +1,74 @@
+.accordion {
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		&__title {
+			position: relative;
+
+			display: flex;
+			justify-content: space-between;
+
+			padding: 26px 10px;
+
+			cursor: pointer;
+			transition: all 0.3s ease;
+			text-align: start;
+
+			border: none;
+			border-top: 1px solid #000;
+			background-color: transparent;
+
+			span {
+				margin-right: 50px;
+			}
+
+			svg {
+				position: absolute;
+				top: 50%;
+				right: 0;
+
+				transform: translateY(-50%);
+			}
+
+			&:hover {
+				transition: all 0.3s ease;
+
+				color: var(--primary);
+			}
+
+			&_active {
+				transition: all 0.3 ease;
+
+				color: var(--primary);
+			}
+		}
+
+		&__answer {
+			overflow: hidden;
+
+			height: 0;
+			padding: 0 10px;
+
+			transition: all 0.3s ease;
+
+			&__text {
+				font-style: italic;
+			}
+		}
+
+		&_last-child {
+			border-bottom: 1px solid #000;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.accordion {
+		&__item {
+			&__title {
+				align-items: center;
+			}
+		}
+	}
+}

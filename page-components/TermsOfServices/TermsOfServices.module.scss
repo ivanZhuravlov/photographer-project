@@ -1,0 +1,81 @@
+.document {
+    padding: 70px 0 100px;
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-family: "OpenSans",
+            sans-serif;
+    }
+
+    &__container {
+        max-width: 1020px;
+    }
+
+    &__desc {
+        display: block;
+        color: #000;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+
+    &__accent {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    &__number-list {
+        margin-top: 25px;
+
+        &__title {
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 35px;
+            letter-spacing: 0.01em;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            span {
+                font-weight: 700;
+            }
+
+            a {
+                text-decoration: underline;
+                font-weight: 600;
+            }
+
+            &__sublist {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    &__glossary {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+
+        &__title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+
+            a {
+                text-decoration: underline;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

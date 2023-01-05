@@ -1,0 +1,106 @@
+.sessions {
+	&__card {
+		display: flex;
+		flex-direction: column;
+
+		padding: 15px 15px 30px;
+
+		background-color: #FAFAFA;
+
+		&__title {
+			padding-bottom: 10px;
+
+			text-align: center;
+
+			color: #000;
+			border-bottom: 1px solid #000;
+		}
+
+		&__row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			padding: 25px 0;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #D3D3D3;
+			}
+
+			&:last-child {
+				border-bottom: 1px solid #000;
+			}
+
+			&__answer {
+				color: #000;
+
+				font-weight: bold;
+			}
+
+			&__title {
+				font-weight: normal;
+			}
+		}
+
+		&__btn {
+			max-width: 250px;
+			margin: 30px auto 0;
+
+			&_active {
+				color: #FFF;
+				background-color: var(--black);
+			}
+		}
+	}
+
+	&__email {
+		display: block;
+
+		margin-top: 40px;
+
+		text-align: center;
+
+		a {
+			text-decoration: underline;
+
+			color: var(--primary);
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.sessions {
+		&__card {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.sessions {
+		&__card {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.sessions {
+		&__card {
+			&__title {
+				font-size: 22px;
+				line-height: 30px;
+			}
+
+			&__row {
+				padding: 20px 0;
+
+				&__title,
+				&__answer {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}

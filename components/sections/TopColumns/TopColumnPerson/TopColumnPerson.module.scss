@@ -1,0 +1,177 @@
+.about {
+  padding: 133px 0 60px;
+
+  background-color: var(--grey);
+
+  &__img {
+    max-width: 520px;
+
+    &-col {
+      &_m {
+        display: none;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+
+    &_m {
+      display: none;
+    }
+  }
+
+  &__name {
+    margin-bottom: 50px;
+
+    span {
+      display: block;
+
+      padding-left: 25px;
+
+      font-style: italic;
+    }
+  }
+
+  &__subtitle {
+    max-width: 491px;
+    margin-bottom: 300px;
+
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__desc {
+    &__title {
+      font-family: "PlayfairDisplay", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+
+    &__text {
+      max-width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .about {
+    &__img {
+      max-width: 450px;
+    }
+
+    &__subtitle {
+      margin-bottom: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about {
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+
+      &-col {
+        &_desktop {
+          display: none;
+        }
+
+        &_m {
+          display: block;
+        }
+      }
+    }
+
+    &__desc {
+      margin-top: 60px;
+
+      &__text {
+        max-width: none;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    margin-top: -77px;
+    padding: 0 0 40px;
+
+    &__img {
+      min-height: 100vh;
+      max-height: 100vh;
+
+      img {
+        min-height: 100vh;
+        max-height: 100vh;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      margin-top: 30px;
+
+      &_desktop {
+        display: none;
+      }
+
+      &_m {
+        display: block;
+      }
+    }
+
+    &__name {
+      margin-bottom: 20px;
+
+      span {
+        padding-left: 10px;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 100px;
+    }
+
+    &__desc {
+      margin-top: 70px;
+
+      &__title {
+        margin-bottom: 25px;
+      }
+
+      &__text {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &__img-col {
+      display: flex;
+      justify-content: center;
+
+      padding: 0;
+    }
+  }
+}

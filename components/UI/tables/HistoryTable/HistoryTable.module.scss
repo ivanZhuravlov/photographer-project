@@ -1,0 +1,116 @@
+.table {
+    width: 100%;
+
+    &__td {
+        padding: 20px 40px 20px 0;
+        width: 20%;
+        white-space: nowrap;
+        color: #000000;
+    }
+
+    &__tr {
+        &_expired {
+            opacity: 0.5;
+        }
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+
+    &__package {
+        color: var(--primary);
+    }
+
+    &__status {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        width: max-content;
+
+        &_active {
+            color: #84D35F;
+            border: 1px solid #84D35F;
+        }
+
+        &_expired {
+            color: var(--grey-alt);
+            border: 1px solid var(--grey-alt);
+        }
+    }
+
+    &__tr {
+        border-top: 1px solid var(--grey-alt);
+
+        &:last-child {
+            border-bottom: 1px solid var(--grey-alt);
+        }
+    }
+
+    &__blocks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .table {
+        display: none;
+
+        &__blocks {
+            display: flex;
+            flex-direction: column;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                border-top: 1px solid var(--grey-alt);
+
+                &:last-child {
+                    border-bottom: 1px solid var(--grey-alt);
+                }
+
+                &__status {
+                    display: block;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    width: max-content;
+
+                    &_active {
+                        color: #84D35F;
+                        border: 1px solid #84D35F;
+                    }
+
+                    &_expired {
+                        color: var(--grey-alt);
+                        border: 1px solid var(--grey-alt);
+                    }
+                }
+
+                &__header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+
+                &__title {
+                    display: block;
+                    color: #000000;
+                }
+
+                &__date {
+                    display: block;
+                    color: var(--grey-alt);
+                    margin: 15px 0;
+                }
+
+                &__package {
+                    display: block;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

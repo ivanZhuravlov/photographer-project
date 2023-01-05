@@ -1,0 +1,21 @@
+.gallery {
+    padding-bottom: 150px;
+
+    background-color: var(--grey);
+
+    img {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery {
+        padding-bottom: 45px;
+    }
+}

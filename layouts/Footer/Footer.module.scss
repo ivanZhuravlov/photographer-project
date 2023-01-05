@@ -1,0 +1,187 @@
+.footer {
+	padding: 60px 0 25px;
+
+	background-color: var(--white);
+
+	&__container {
+		max-width: 1400px;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		margin-bottom: 70px;
+
+		&__item {
+			margin: 10px 25px 0;
+
+			transition: all 0.3s ease;
+			letter-spacing: 0.02em;
+			text-transform: lowercase;
+
+			font-family: "PlayfairDisplay", sans-serif;
+			font-size: 20px;
+			line-height: 27px;
+
+			&:hover {
+				transition: all 0.3s ease;
+
+				color: var(--primary);
+			}
+		}
+	}
+
+	&__info {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&__copy {
+			text-transform: uppercase;
+		}
+
+		&__icons {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+
+			svg {
+				margin: 0 25px;
+			}
+		}
+
+		&__list {
+			display: flex;
+			align-items: center;
+
+			&__item {
+				transition: all 0.3s ease;
+				text-decoration: underline;
+
+				&:not(:first-child) {
+					margin-left: 40px;
+				}
+
+				&:hover {
+					transition: all 0.3s ease;
+
+					opacity: 80%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		&__list {
+			&__item {
+				margin: 10px 13px 0;
+			}
+		}
+
+		&__info {
+			flex-direction: column;
+
+			&__icons {
+				position: relative;
+				z-index: 2;
+				top: auto;
+				left: auto;
+
+				justify-content: space-between;
+
+				margin: 35px 0;
+
+				transform: none;
+
+				svg {
+					margin: 0;
+
+					&:first-child {
+						margin-right: 35px;
+					}
+				}
+			}
+
+			&__list {
+				position: relative;
+
+				order: -1;
+			}
+
+			&__copy {
+				position: relative;
+
+				order: 3;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.footer {
+		padding-top: 50px;
+
+		&__list {
+			justify-content: space-between;
+
+			padding: 0 20px;
+
+			&__item {
+				width: 50%;
+				margin: 0;
+				margin-bottom: 15px;
+
+				&:nth-child(1) {
+					order: 1;
+				}
+
+				&:nth-child(2) {
+					order: 3;
+				}
+
+				&:nth-child(3) {
+					order: 5;
+				}
+
+				&:nth-child(4) {
+					order: 2;
+				}
+
+				&:nth-child(5) {
+					order: 4;
+				}
+
+				&:nth-child(6) {
+					order: 6;
+				}
+
+				&:nth-child(7) {
+					order: 7;
+
+					width: 100%;
+
+					text-align: center;
+				}
+
+				&_right {
+					text-align: end;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.history {
+    padding-top: 50px;
+
+    &__title {
+        margin-bottom: 55px;
+        font-weight: normal;
+        color: var(--primary);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .history {
+        &__title {
+            display: none;
+        }
+    }
+}

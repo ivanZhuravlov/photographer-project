@@ -1,0 +1,44 @@
+.success-payment-message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100vh;
+	margin-top: -103px;
+
+	text-align: center;
+
+	&__title {
+		margin-bottom: 15px;
+	}
+
+	&__desc {
+		max-width: 390px;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.success-payment-message {
+		margin-top: -77px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.success-payment-message {
+		&__title {
+			font-size: 20px;
+			line-height: 27px;
+		}
+
+		&__desc {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+		&__email {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}

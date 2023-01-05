@@ -1,0 +1,39 @@
+.activation {
+	width: 450px;
+	max-width: 450px;
+	margin: 140px auto 100px;
+
+	&__title {
+		margin-bottom: 35px;
+
+		text-align: center;
+	}
+
+	&__form {
+		width: 100%;
+
+		&__input {
+			margin-bottom: 45px;
+		}
+
+		&__btn {
+			display: block;
+
+			margin: 35px auto 0;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.activation {
+		width: 350px;
+		min-height: 80vh;
+		margin: 140px auto 0;
+	}
+}
+
+@media screen and (max-width: 359px) {
+	.activation {
+		width: auto;
+	}
+}

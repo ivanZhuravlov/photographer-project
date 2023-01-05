@@ -1,0 +1,17 @@
+.parallax {
+	display: block;
+}
+
+@keyframes fade {
+	from {
+		transform: translateY(0);
+
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(-30%);
+
+		opacity: 1;
+	}
+}
